@@ -16,7 +16,7 @@ In order to run a container with our image, execute:
 docker run --name some-pgadmin4 \
            --link some-postgres:postgres \
            -p 5050:5050 \
-           -d fenglc/pgadmin4
+           -d elesdoar/pgadmin4
 ```
 
 Then you can hit http://localhost:5050 or http://host-ip:5050 in your browser.
