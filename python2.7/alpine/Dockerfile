@@ -6,8 +6,8 @@ RUN set -ex \
 		bash \
 		postgresql
 
-ENV PGADMIN4_VERSION 3.2
-ENV PGADMIN4_DOWNLOAD_URL https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v3.2/pip/pgadmin4-3.2-py2.py3-none-any.whl
+ENV PGADMIN4_VERSION 3.3
+ENV PGADMIN4_DOWNLOAD_URL https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v3.3/pip/pgadmin4-3.3-py2.py3-none-any.whl
 
 # Metadata
 LABEL org.label-schema.name="pgAdmin4" \
