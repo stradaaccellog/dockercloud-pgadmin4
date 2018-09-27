@@ -1,6 +1,6 @@
 # pgAdmin 4
 
-[![](https://img.shields.io/docker/pulls/fenglc/pgadmin4.svg)](https://hub.docker.com/r/fenglc/pgadmin4 "Click to view the image on Docker Hub") [![](https://images.microbadger.com/badges/image/fenglc/pgadmin4.svg)](http://microbadger.com/images/fenglc/pgadmin4 "Download size and number of layers") [![](https://images.microbadger.com/badges/license/fenglc/pgadmin4.svg)](https://www.pgadmin.org/licence.php "Click to view the license for this image")
+[![](https://img.shields.io/docker/pulls/elesdoar/pgadmin4.svg)](https://hub.docker.com/r/elesdoar/pgadmin4 "Click to view the image on Docker Hub") [![](https://images.microbadger.com/badges/image/elesdoar/pgadmin4.svg)](http://microbadger.com/images/elesdoar/pgadmin4 "Download size and number of layers") [![](https://images.microbadger.com/badges/license/elesdoar/pgadmin4.svg)](https://www.pgadmin.org/licence.php "Click to view the license for this image")
 
 ## What is pgAdmin?
 
@@ -62,7 +62,7 @@ default None
 
 If you want to build and run your own version locally:
 
-- Clone [this](https://github.com/fenglc/dockercloud-pgAdmin4) repository.
+- Clone [this](https://github.com/elesdoar/dockercloud-pgAdmin4) repository.
 - Build your own version of the Docker image.
 
 ### License
