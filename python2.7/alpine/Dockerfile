@@ -6,8 +6,8 @@ RUN set -ex \
 		bash \
 		postgresql
 
-ENV PGADMIN4_VERSION 3.4
-ENV PGADMIN4_DOWNLOAD_URL https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v3.4/pip/pgadmin4-3.4-py2.py3-none-any.whl
+ENV PGADMIN4_VERSION 3.5
+ENV PGADMIN4_DOWNLOAD_URL https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v3.5/pip/pgadmin4-3.5-py2.py3-none-any.whl
 
 # Metadata
 LABEL org.label-schema.name="pgAdmin4" \
@@ -23,6 +23,7 @@ RUN set -ex \
 		musl-dev \
 		postgresql-dev \
 		libffi-dev \
+		linux-headers \
 	&& pip --no-cache-dir install \
 		$PGADMIN4_DOWNLOAD_URL \
 	&& apk del .build-deps
