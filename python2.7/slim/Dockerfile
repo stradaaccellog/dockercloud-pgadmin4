@@ -11,7 +11,7 @@ RUN set -ex \
 		postgresql-client \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV PGADMIN4_VERSION 4.3
+ENV PGADMIN4_VERSION 4.4
 ENV PGADMIN4_DOWNLOAD_URL https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v${PGADMIN4_VERSION}/pip/pgadmin4-${PGADMIN4_VERSION}-py2.py3-none-any.whl
 
 # Metadata
