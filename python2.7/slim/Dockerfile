@@ -11,8 +11,8 @@ RUN set -ex \
 		postgresql-client \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV PGADMIN4_VERSION 4.2
-ENV PGADMIN4_DOWNLOAD_URL https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.2/pip/pgadmin4-4.2-py2.py3-none-any.whl
+ENV PGADMIN4_VERSION 4.10
+ENV PGADMIN4_DOWNLOAD_URL https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v${PGADMIN4_VERSION}/pip/pgadmin4-${PGADMIN4_VERSION}-py2.py3-none-any.whl
 
 # Metadata
 LABEL org.label-schema.name="pgAdmin4" \
@@ -25,7 +25,9 @@ RUN set -ex \
 	&& buildDeps="dpkg-dev \
 		gcc \
 		libssl-dev \
-		python2.7-dev" \
+		python2.7-dev \
+		python-psycopg2 \
+		libpq-dev " \
 	&& apt-get update \
 	&& apt-get install -y $buildDeps --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/* \
